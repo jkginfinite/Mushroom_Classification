@@ -1,0 +1,21 @@
+Rank|Feature|Correlation with target
+---|---|---
+1|odor_n|-0.7855566222367798
+2|odor_f|0.6238419598140276
+3|stalk-surface-above-ring_k|0.587658257630713
+4|stalk-surface-below-ring_k|0.5735240117095786
+5|ring-type_p|-0.5404689127748091
+6|gill-size_n|0.5400243574329782
+7|gill-size_b|-0.5400243574329637
+8|gill-color_b|0.5388081615534243
+9|bruises_f|0.5015303774076804
+10|bruises_t|-0.5015303774076804
+11|stalk-surface-above-ring_s|-0.49131418071172045
+12|spore-print-color_h|0.49022917056952875
+13|ring-type_l|0.4516190663173296
+14|population_v|0.44372237905537937
+15|stalk-surface-below-ring_s|-0.42544404585499374
+16|spore-print-color_n|-0.41664529710731296
+17|spore-print-color_k|-0.3968322009032092
+18|spore-print-color_w|0.3573840060325314
+19|gill-spacing_c|0.34838678518425714
