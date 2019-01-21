@@ -125,11 +125,11 @@ Each model was fed through the previously mentioned for-loop and evaluated on a 
 
 Despite random forest, k-nearest-neighbors and decision trees all getting perfect scores when fed 19 features, it was decision trees which performed in the shortest amount time. *Thus, decision tree classifier was the best model*.
 
-.
 <div style="text-align: center">
-<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/Model_evaluation.png' align='center'></div>
+<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/Model_evaluation.png'></div>
 
 <div id='#Model_Evaluation'></div>
+
 ## Model Evaluation: Decision Tree Classifier
 
 Decision tree classifier was the model which met the criteria of the performing in the least amount of time, with the least number of features and having maximum performance metrics on F1 and accuracy scores.
