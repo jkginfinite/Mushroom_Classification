@@ -71,7 +71,7 @@ In both cases, the null hypothesis was that the distribution of a feature was NO
 Once the data was in binary form, a histogram plot between the correlation of each feature and the class (the target) was made. Using the values of the correlations, a trial and error process was done by fitting an assortment of classification models to a set of features that had a magnitude (absolute value) greater than a threshold correlation value. It was found that all the set of features with a magnitude greater than $|\pm 0.34847|$ was enough data to produce a model that performed with perfect accuracy on a 70-30 train test split. There were 19 features (out of 112) that met this criteria.
 
 
- <img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/hist.png' width="70%" height="70%", align='center'>
+ <img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/hist.png' width="70%" height="70%" align='center'>
 
 <div id="feature_ranking"></div>
 
@@ -118,7 +118,7 @@ Each model was fed through the previously mentioned for-loop and evaluated on a 
 
 Despite random forest, k-nearest-neighbors and decision trees all getting perfect scores when fed 19 features, it was decision trees which performed in the shortest amount time. *Thus, decision tree classifier was the best model*.
 
-<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/Model_evaluation.png'>
+<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/Model_evaluation.png' align='center'>
 
 
 <div id='#Model_Evaluation'></div>
@@ -140,11 +140,11 @@ Train set size | 5686 (70%)
 Specifically, the hyperparameters and roc-auc curve were;
 
 
-<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/roc-auc.png'>
+<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/roc-auc.png' align='center'>
 
 With a confusion matrix of;
 
-<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/confusion_matrix.png'>
+<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/confusion_matrix.png' align='center'>
 
 **Comments on perfect accuracy metrics**
 
@@ -202,7 +202,7 @@ The decision tree model has a workflow which helps us draw conclusions.
 
 Starting at the top, for a given row (i.e. a given mushroom) if the feature `odor_n <=0.5` (which really means `odor_n = 0` or `odor_none=False`, or *it has an odor*) AND it `bruises_t <=0.5` (i.e. `bruises_t = 0` or, the *mushroom does NOT bruise*), then we conclude the mushroom is poisonous. More conclusions can be made simply by following the tree.
 
-<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/dtree.png'>
+<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/dtree.png' align='center'>
 
  <div id="Links"></div>
  
