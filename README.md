@@ -6,7 +6,7 @@ By Joe Ganser
 
 In this analysis, a classification model is run on data attempting to classify mushrooms as poisnous or edible. The data itsself is entirely nominal and categorical. The data comes from a [kaggle competition](https://www.kaggle.com/uciml/mushroom-classification) and is also found on the [UCI Machine learning repository](https://archive.ics.uci.edu/ml/datasets/mushroom). The objectives included finding the best performing model and drawing conclusions about mushroom taxonomy.
 
-<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/mushrooms.jpg' width='30%' height='30%'>
+<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/mushrooms.jpg' width='30%' height='30%' align='center'>
 
 **PROJECT OUTLINE**
 * Introduction
@@ -71,9 +71,10 @@ In both cases, the null hypothesis was that the distribution of a feature was NO
 Once the data was in binary form, a histogram plot between the correlation of each feature and the class (the target) was made. Using the values of the correlations, a trial and error process was done by fitting an assortment of classification models to a set of features that had a magnitude (absolute value) greater than a threshold correlation value. It was found that all the set of features with a magnitude greater than $|\pm 0.34847|$ was enough data to produce a model that performed with perfect accuracy on a 70-30 train test split. There were 19 features (out of 112) that met this criteria.
 
 
- <img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/hist.png' width="70%" height="70%">
+ <img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/hist.png' width="70%" height="70%", align='center'>
 
 <div id="feature_ranking"></div>
+
 **Feature Ranking**
 
 After converting into binary form, features were then fed into the models and ranked descendingly in accordance to the magnitude of their correlation coefficient with the target variable, `class`. Thus the first feature fed into the model had the highest magnitude of correlation, the second had the second highest, and so on. The first five rows of the feature rank table looked like this;
