@@ -52,11 +52,13 @@ e|x|s|g|f|n|f|w|b|k|t|e|s|s|w|w|p|w|o|e|n|a|g
 Where "class" was the target, and p was for poisnonous and e was for edible.
 
 <div id='data-pre-processing'></div>
+
 **Data pre-processing**
 
 Obviosuly a machine learning model wouldn't be able to process letters when there should be numbers, so an encoding process was waranted. Using the pandas `.get_dummies()` function I was able to generate a table filled with entirely binary data, where 1 is present if a feature of a given column was present, and 0 otherwise.
 
 After converting to binary format, the original 23 columns were transformed to 117 columns. No rows were dropped.
+
 <div id='irrelevant'></div>
 
 **Identifying irrelevant features**
@@ -103,6 +105,7 @@ Hence the loop to build the models went as such;
     evaluate models, etc.`
 
 <div id='Model_Selection'></div>
+
 ### Model Selection
 
 Multiple models were chosen for evaluation. These included:
