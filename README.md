@@ -144,14 +144,16 @@ Train set size | 5686 (70%)
 
 Specifically, the hyperparameters and roc-auc curve were;
 
+
 <p align="center">
-<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/roc-auc.png'>
+<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/roc-auc.png'></p>
 
 
-
+<div style="text-align: center">
 With a confusion matrix of;
+</div>
 
-
+<p align="center">
 <img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/confusion_matrix.png'></p>
 
 **Comments on perfect accuracy metrics**
@@ -167,6 +169,8 @@ Using only 19 pieces of information, we can conclude with 100% certainty that a 
 *A negative correlation means if a mushroom has that feature it is more likely to be edible*
 
 *A positive correlation means if a mushroom has that feature it is more likely to be poisonous.*
+
+<p align="center">
 
 Rank|Feature|Correlation with target
 ---|---|---
@@ -189,6 +193,8 @@ Rank|Feature|Correlation with target
 17|spore-print-color_k|-0.3968322009032092
 18|spore-print-color_w|0.3573840060325314
 19|gill-spacing_c|0.34838678518425714
+
+</p>
 
 Out original features (before engineering), the 19 listed above were engineered from 9 of the 22 originals. They were as follows;
 
