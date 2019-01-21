@@ -29,7 +29,8 @@ In this analysis, my objective was to built a model with the highest performance
 
 In conjunction, I wanted to determine what the key factors where in classifying a mushroom as poisonous or edible.
 <div id='background'></div>
-**BACKGROUND INFO**
+
+**Background info**
 
 Categorizing something as poisnous versus edible wouldn't be a problem taken lightly. If you had any  margin of error, someone could die. Thus, any model that predicts whether or not a mushroom is poisonous or edible needs to have perfect accuracy. At a glance, this is the goal of the data - figure out what to eat versus toss; a typical problem in classification.
 
@@ -54,6 +55,7 @@ Obviosuly a machine learning model wouldn't be able to process letters when ther
 
 After converting to binary format, the original 23 columns were transformed to 117 columns. No rows were dropped.
 <div id='irrelevant'></div>
+
 **Identifying irrelevant features**
 
 Feature selection decisions were made based upon filtering methods. But before determining the level of influence of each feature, I wanted to find out which features were totally useless. To do this, two methods were used.
@@ -63,6 +65,7 @@ Feature selection decisions were made based upon filtering methods. But before d
 
 In both cases, the null hypothesis was that the distribution of a feature was NOT the same for both the edibles and the poisonous mushrooms. A for loop acted across all the features in the cleaned format, and hypothesis testing was done on each one. After useless features were found, they were discarded. In all, it was found the five features were irrelevant and had no influence determining the category. The data for modelling was then reduced to 112 columns.
 <div id='feature_selection'></div>
+
 **Selecting important features by filtration**
 
 Once the data was in binary form, a histogram plot between the correlation of each feature and the class (the target) was made. Using the values of the correlations, a trial and error process was done by fitting an assortment of classification models to a set of features that had a magnitude (absolute value) greater than a threshold correlation value. It was found that all the set of features with a magnitude greater than $|\pm 0.34847|$ was enough data to produce a model that performed with perfect accuracy on a 70-30 train test split. There were 19 features (out of 112) that met this criteria.
@@ -201,6 +204,7 @@ Starting at the top, for a given row (i.e. a given mushroom) if the feature `odo
 <img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/dtree.png'>
 
  <div id="Links"></div>
+ 
 ## Links to my codeded notebooks to build the project
 
 * <a href='https://github.com/JoeGanser/Mushroom_Classification/blob/master/Code_Nodebooks/EDA.ipynb'>Cleaning the data</a>
@@ -209,6 +213,7 @@ Starting at the top, for a given row (i.e. a given mushroom) if the feature `odo
 * <a href='https://github.com/JoeGanser/Mushroom_Classification/blob/master/Code_Nodebooks/Decision_Tree_Classifier.ipynb'>Model Evaluation</a>
 
 <div id='source'></div>
+
 ## Links/other sources
 * [The original kaggle competition](https://www.kaggle.com/uciml/mushroom-classification)
 * [UCI Machine learning repository, mushroom data set](https://archive.ics.uci.edu/ml/datasets/mushroom)
