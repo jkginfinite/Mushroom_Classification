@@ -170,7 +170,7 @@ Using only 19 pieces of information, we can conclude with 100% certainty that a 
 
 *A positive correlation means if a mushroom has that feature it is more likely to be poisonous.*
 
-<p align="center">
+
 
 Rank|Feature|Correlation with target
 ---|---|---
@@ -194,7 +194,6 @@ Rank|Feature|Correlation with target
 18|spore-print-color_w|0.3573840060325314
 19|gill-spacing_c|0.34838678518425714
 
-</p>
 
 Out original features (before engineering), the 19 listed above were engineered from 9 of the 22 originals. They were as follows;
 
