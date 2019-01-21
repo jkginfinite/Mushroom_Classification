@@ -145,7 +145,6 @@ Train set size | 5686 (70%)
 Specifically, the hyperparameters and roc-auc curve were;
 
 <p align="center">
-<div style="text-align: center">
 <img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/roc-auc.png'>
 
 
@@ -153,7 +152,7 @@ Specifically, the hyperparameters and roc-auc curve were;
 With a confusion matrix of;
 
 
-<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/confusion_matrix.png'></div></p>
+<img src='https://raw.githubusercontent.com/JoeGanser/Mushroom_Classification/master/pics/confusion_matrix.png'></p>
 
 **Comments on perfect accuracy metrics**
 
